@@ -1,0 +1,44 @@
+@import url("/assets/css/styles.css");
+@import url("/assets/css/header.css");
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--cuerpo_de_texto_font);
+    color: white;
+    gap: 40px;
+}
+
+.login h1  {
+    font-family: var(--titulos_encabezados_font);
+    font-size: 40px;
+}
+
+.form-login {
+    background: #292A32;
+    width: 30%;
+    padding: 30px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.login-text input{
+    border-radius: 14px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+
