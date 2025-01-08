@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
-    <link rel="stylesheet" href="/assets/css/register.css">
+    <link rel="stylesheet" href="/assets/css/login-register/register.css">
 </head>
 
 <body>
     <header id="home">
         <img class="logo" src="/assets/img/Logo-1.png" alt="">
         <nav>
-            <button><a href="/login.html">Iniciar sesión</a></button>
-            <button><a href="/index.html">Home</a></button>
+            <label for="toggle-menu" class="menu-label">
+                <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+            </label>
+            <input type="checkbox" id="toggle-menu" />
+
+            <div class="navbar">
+                <button><a href="/login.html">Iniciar sesión</a></button>
+                <button><a href="/index.html">Home</a></button>
+            </div>
         </nav>
     </header>
     <main>
@@ -62,10 +69,20 @@
                         </div>
                     </div>
                 </div>
-                
+
             </form>
         </section>
     </main>
+
+    <footer>
+        <section>
+                <p>© 2024 Voltura. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a class="color-footer-text" href="#">Politicas de privacidad</a>
+                    <a class="color-footer-text" href="#">Terminos y condiciones</a>
+                </div>
+        </section>
+    </footer>
 </body>
 
 </html>

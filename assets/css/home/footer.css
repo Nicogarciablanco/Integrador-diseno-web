@@ -1,0 +1,168 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background: var(--black);
+    border-radius: 45px 45px 0px 0px;
+    padding: 60px;
+    font-family: var(--cuerpo_de_texto_font);
+}
+
+.footer-division{
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--naranja1);
+}
+
+.linkbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkbar ul{
+    display: flex;
+    gap: 40px;
+}
+
+.color-footer-text{
+    color: white;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.button-footer{
+    padding: 7px 10px;
+    border-radius:var(--button_radius) ;
+    border: none;
+    cursor: pointer;
+    font-family: var(--cuerpo_de_texto_font);
+    font-weight: 500;
+    background: var(--naranja1);
+    color: #1c1c1c;
+}
+
+.linkbar div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-us-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-contact-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text-contact-footer h4{
+    color: white;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.text-contact-footer p{
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.form-footer{
+    display: flex;
+    background: #292A32;
+    border-radius: 14px;
+    padding: 58px 40px;
+    gap: 20px;
+}
+
+.form-email-footer{
+    background: none;
+    border: 1px solid white;
+    padding: 20px 20px;
+    border-radius: 14px;
+    width: 100%;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.form-email-footer::placeholder{
+    color: white!important;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.form-submit-footer{
+    background: var(--naranja1);
+    border: none;
+    border-radius: 14px;
+    padding: 20px 20px;
+    font-weight: 400;
+    font-size: 17px;
+    cursor: pointer;
+    color: #1C1C1C;
+}
+
+.copyright-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.copyright-footer p{
+    color: white;
+}
+
+.copyright-footer div{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width:1400px) {
+    footer{
+        gap: 40px;
+    }
+
+    .contact-us-footer {
+        align-items: center;
+        gap: 50px;
+    }
+
+    .form-footer {
+        flex-direction: column;
+        padding: 30px 20px;
+        min-width: 300px;
+    }
+
+    
+}
+
+@media (max-width:850px) {
+    .linkbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-us-footer{
+        flex-direction: column;
+    }
+
+    .form-footer{
+        width: 100%;
+    }
+
+    .text-contact-footer {
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-submit-footer{
+        min-width: 300px;
+    }
+}

@@ -5,37 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/home/home.css">
 </head>
 
 <body>
     <header id="home">
-        <img src="/assets/img/Logo-1.png" alt="" width="300px">
+        <img class="logo" src="/assets/img/Logo-1.png" alt="">
         <nav>
-            <ul class="navbar-list">
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#about-us">Sobre nosotros</a></li>
-                <li><a href="#benefits">Beneficios</a></li>
-                <li><a href="#vehicles">Vehiculos</a></li>
-                <li><a href="#contact-us">Contacto</a></li>
-            </ul>
-            <button><a href="/register.html">Registrarse</a></button>
-            <button><a href="/login.html">Iniciar sesion</a></button>
+
+            <div class="navbar">
+                <ul class="navbar-list">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#about-us">Sobre nosotros</a></li>
+                    <li><a href="#benefits">Beneficios</a></li>
+                    <li><a href="#vehicles">Vehiculos</a></li>
+                    <li><a href="#contact-us">Contacto</a></li>
+                </ul>
+
+                <button><a href="/register.html">Registrarse</a></button>
+                <button><a href="/login.html"> Iniciar sesion</a></button>
+            </div>
+
+            <label for="toggle-menu" class="menu-label-home">
+                <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+            </label>
+            <input type="checkbox" id="toggle-menu" />
         </nav>
     </header>
     <main>
         <section class="hero" id="hero">
             <div class="hero-text">
-                <h2>La Revolución del Rendimiento Automotriz</h2>
+                <h1>La Revolución del Rendimiento Automotriz</h1>
                 <p>Voltura es más que una marca de autos; es una declaración de poder,
                     velocidad, y diseño vanguardista. Con un enfoque implacable en la excelencia y
-                    la innovación, Voltura redefine lo que significa conducir un vehículo deportivo y superdeportivo.
+                    la innovación, Voltura redefine lo que significa conducir un vehículo deportivo.
                     Cada modelo es una fusión perfecta de ingeniería de precisión y estética dinámica,
                     creada para aquellos que no aceptan compromisos en la carretera.
                     Voltura no solo ofrece autos; ofrece una experiencia de conducción sin igual.</p>
                 <div class="buttons-hero">
                     <button><a href="">Test Drive</a></button>
-                    <button><a href="">Ver vehiculos</a></button>
+                    <button><a href="#vehicles">Ver vehiculos</a></button>
                 </div>
 
             </div>
@@ -65,7 +74,7 @@
             <div class="benefits-cards">
                 <div class="benefits-card">
                     <img src="/assets/img/icon-computer-chip.png" alt="">
-                    <h3>Innovación y Tecnología Avanzada</h3>
+                    <h4>Innovación y Tecnología Avanzada</h4>
                     <p>Voltura combina la última tecnología con un
                         diseño innovador para ofrecer una experiencia
                         de conducción incomparable.</p>
@@ -73,14 +82,14 @@
                 <!-- 2 -->
                 <div class="benefits-card">
                     <img src="/assets/img/icon-speedometer.png" alt="">
-                    <h3>Rendimiento Excepcional</h3>
+                    <h4>Rendimiento Excepcional</h4>
                     <p>Nuestros vehículos están diseñados para entregar potencia
                         y velocidad máxima en cada trayecto.</p>
                 </div>
                 <!-- 3 -->
                 <div class="benefits-card">
                     <img src="/assets/img/icon-convertible.png" alt="">
-                    <h3>Diseño Elegante y Aerodinámico</h3>
+                    <h4>Diseño Elegante y Aerodinámico</h4>
                     <p>Cada modelo Voltura es una obra maestra de diseño,
                         con líneas elegantes que mejoran el rendimiento
                         aerodinámico.</p>
@@ -88,7 +97,7 @@
                 <!-- 4 -->
                 <div class="benefits-card">
                     <img src="/assets/img/icon-medal.png" alt="">
-                    <h3>Calidad y Exclusividad</h3>
+                    <h4>Calidad y Exclusividad</h4>
                     <p>Con materiales de la más alta calidad
                         y un enfoque en la exclusividad,
                         Voltura redefine el lujo en la conducción.</p>
@@ -105,10 +114,7 @@
 
                 <!-- 1 -->
                 <div class="vehicles-card">
-                    <div>
-                        <h4>Tempesta</h4>
-                        <img src="/assets/img/heart-vehicles.png" alt="">
-                    </div>
+                    <h4>Tempesta</h4>
                     <img class="vehicles-img" src="/assets/img/voltura-tempesta-card.jpg" alt="">
                     <div>
                         <p>70.000 US$</p>
@@ -118,10 +124,7 @@
 
                 <!-- 2 -->
                 <div class="vehicles-card">
-                    <div>
-                        <h4>Hyperion</h4>
-                        <img src="/assets/img/heart-vehicles.png" alt="">
-                    </div>
+                    <h4>Hyperion</h4>
                     <img class="vehicles-img" src="/assets/img/voltura-hyperion.jpg" alt="">
                     <div>
                         <p>70.000 US$</p>
@@ -131,10 +134,7 @@
 
                 <!-- 3 -->
                 <div class="vehicles-card">
-                    <div>
-                        <h4>Phantom</h4>
-                        <img src="/assets/img/heart-vehicles.png" alt="">
-                    </div>
+                    <h4>Phantom</h4>
                     <img class="vehicles-img" src="/assets/img/voltura-phantom.jpg" alt="">
                     <div>
                         <p>70.000 US$</p>
@@ -144,10 +144,7 @@
 
                 <!-- 4 -->
                 <div class="vehicles-card">
-                    <div>
-                        <h4>Striker</h4>
-                        <img src="/assets/img/heart-vehicles.png" alt="">
-                    </div>
+                    <h4>Striker</h4>
                     <img class="vehicles-img" src="/assets/img/voltura-striker.jpg" alt="">
                     <div>
                         <p>70.000 US$</p>
@@ -160,10 +157,7 @@
                 <!-- 5 -->
 
                 <div class="vehicles-card">
-                    <div>
-                        <h4>Nebula</h4>
-                        <img src="/assets/img/heart-vehicles.png" alt="">
-                    </div>
+                    <h4>Nebula</h4>
                     <img class="vehicles-img" src="/assets/img/voltura-nebula.jpg" alt="">
                     <div>
                         <p>70.000 US$</p>
@@ -173,10 +167,7 @@
 
                 <!-- 6 -->
                 <div class="vehicles-card">
-                    <div>
-                        <h4>Heritage</h4>
-                        <img src="/assets/img/heart-vehicles.png" alt="">
-                    </div>
+                    <h4>Heritage</h4>
                     <img class="vehicles-img" src="/assets/img/voltura-heritage.jpg" alt="">
                     <div>
                         <p>50.000 US$</p>
@@ -186,10 +177,7 @@
 
                 <!-- 7 -->
                 <div class="vehicles-card">
-                    <div>
-                        <h4>Mirage</h4>
-                        <img src="/assets/img/heart-vehicles.png" alt="">
-                    </div>
+                    <h4>Mirage</h4>
                     <img class="vehicles-img" src="/assets/img/voltura-mirage.jpg" alt="">
                     <div>
                         <p>50.000 US$</p>
@@ -199,10 +187,7 @@
 
                 <!-- 8 -->
                 <div class="vehicles-card">
-                    <div>
-                        <h4>Horizon</h4>
-                        <img src="/assets/img/heart-vehicles.png" alt="">
-                    </div>
+                    <h4>Horizon</h4>
                     <img class="vehicles-img" src="/assets/img/voltura-horizon.jpg" alt="">
                     <div>
                         <p>50.000 US$</p>
@@ -252,20 +237,7 @@
     <footer>
         <hr class="footer-division">
         <section class="linkbar">
-            <a href="#home">
                 <img src="/assets/img/logo.png" alt="" width="200px">
-            </a>
-            <nav>
-                <ul>
-                    <li><a class="color-footer-text" href="#hero">Inicio</a></li>
-                    <li><a class="color-footer-text" href="#about-us">Sobre nosotros</a></li>
-                    <li><a class="color-footer-text" href="#benefits">Beneficios</a></li>
-                    <li><a class="color-footer-text" href="#vehicles">Vehiculos</a></li>
-                    <li><a class="color-footer-text" href="#contact-us">Contacto</a></li>
-                    <li><a class="color-footer-text button-footer" href="/register.html">Registrarse</a></li>
-                    <li><a class="color-footer-text button-footer" href="/login.html">Iniciar sesion</a></li>
-                </ul>
-            </nav>
             <div>
                 <a href=""><img src="/assets/img/Facebookicon.svg" alt="Facebook"></a>
                 <a href=""><img src="/assets/img/Xicon.svg" alt="X"></a>
