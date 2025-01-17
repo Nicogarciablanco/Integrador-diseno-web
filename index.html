@@ -10,10 +10,11 @@
 
 <body>
     <header id="home">
-        <img class="logo" src="/assets/img/Logo-1.png" alt="">
+        <a href="#home"><img class="logo" src="/assets/img/Logo-1.png" alt=""></a>
         <nav>
-
+            <input type="checkbox" id="toggle-menu" />
             <div class="navbar">
+                <input type="checkbox" id="toggle-menu-1400" />
                 <ul class="navbar-list">
                     <li><a href="#hero">Inicio</a></li>
                     <li><a href="#about-us">Sobre nosotros</a></li>
@@ -24,14 +25,25 @@
 
                 <button><a href="/register.html">Registrarse</a></button>
                 <button><a href="/login.html"> Iniciar sesion</a></button>
-            </div>
 
-            <label for="toggle-menu" class="menu-label-home">
-                <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+                <label for="toggle-menu-1400" class="menu-label-1400 menu-bars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="overlay"></div>
+            </div>
+            
+            <div class="overlay"></div>
+            <label for="toggle-menu" class="menu-label menu-bars">
+                <span></span>
+                <span></span>
+                <span></span>
             </label>
-            <input type="checkbox" id="toggle-menu" />
         </nav>
     </header>
+    
+    
     <main>
         <section class="hero" id="hero">
             <div class="hero-text">

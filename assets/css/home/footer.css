@@ -163,6 +163,12 @@ footer{
     }
 
     .form-submit-footer{
-        min-width: 300px;
+        min-width: 210px;
+    }
+
+    .copyright-footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }

@@ -1,5 +1,6 @@
 @import url("/assets/css/global-styles/styles.css");
 @import url("/assets/css/global-styles/header.css");
+@import url("/assets/css/global-styles/mq-menu.css");
 @import url("/assets/css/login-register/footer-login-register.css");
 
 .register {
@@ -18,10 +19,14 @@ form{
     padding: 30px;
     background: #292A32;
     border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
 .register-form{
-    
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,13 +51,37 @@ form{
 }
 
 .form-text input{
+    color: black;
     width: 100%;
     padding: 10px;
     border-radius: 14px;
     border: none;
 }
 
+.send-button {
+    font-family: var(--cuerpo_de_texto_font);
+    background: var(--naranja1);
+    color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 14px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.send-button:hover {
+    background: var(--naranjahover);
+    font-size: 16px;
+}
+
+
+
 @media (max-width:1400px) {
+    form{
+        width: 700px;
+    }
     .register{
         font-size: var(--titulos_encabezados_size_mq1400);
         
@@ -61,24 +90,24 @@ form{
     .register-form{
         font-size: var(--cuerpo_de_texto_size_mq1400);
     }
-    .form-cards{
-        display: flex;
-        flex-direction: column;
-    }
 
 }
 
 @media (max-width:850px) {
     form{
-        width: 80%;
+        width: 450px;
         padding: 20px;
     }
 
-
-}
-
-@media (max-width:500px) {
-    form {
-        width: 95%;
+    .form-cards{
+        display: flex;
+        flex-direction: column;
     }
 }
+
+@media (max-width: 500px) {
+    form{
+        width: 98%;
+    }
+}
+

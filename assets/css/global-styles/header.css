@@ -1,17 +1,22 @@
 header{
     display: flex;
     justify-content: space-between;
-    height: fit-content;
     z-index: 3;
     position: sticky;
-    background: #181c20;
+    background: #242a30;
     top: 0;
     padding: 20px 4.5%;
     align-items: center;
+    box-shadow: 0px 10px 5px 5px #242a30;
+    height: 72px;
+}
+
+header a {
+    display: flex;
 }
 
 .logo{
-    width: 300px;
+    width: 250px;
 }
 
 nav{
@@ -23,22 +28,21 @@ nav{
 
 .navbar{
     display: flex;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
 }
 
-.menu-label-home {
+.menu-label,.menu-label-1400{ 
     display: none;
 }
 
-#toggle-menu{
+#toggle-menu, #toggle-menu-1400{
     display: none;
 }
 
 .navbar-list{
     display: flex;
-    gap: 40px;
-    
+    gap: 15px;
 }
 
 .navbar-list a{
@@ -54,33 +58,16 @@ nav{
     font-weight: 500;
     background: var(--naranja1);
     color: #1c1c1c;
+    transition: 1s;
 }
 
-@media (max-width:1400px) {
-    .navbar-list{
-        /* background: #292A32; */
-        display: none;
-    }
-
-    .menu-label-home{
-        display: block;
-        cursor: pointer;
-    }
+.navbar button:hover{
+    background: var(--naranjahover);
 }
+
 
 @media (max-width:850px){
     .logo{
         width: 200px;
     }
-
-    .navbar{
-        background: #292A32;
-        display: none;
-    }
-
-    .menu-label{
-        display: block;
-        cursor: pointer;
-    }
-
 }

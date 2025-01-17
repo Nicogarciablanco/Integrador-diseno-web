@@ -2,21 +2,18 @@
 
 :root{
     --titulos_encabezados_font: "Montserrat", sans-serif;
-    --titulos_encabezados_size_h1: 45px;
-    --titulos_encabezados_size_h2: 40px;
-    --titulos_encabezados_size_h3: 35px;
+    --titulos_encabezados_size_h1: 40px;
+    --titulos_encabezados_size_h2: 35px;
+    --titulos_encabezados_size_h3: 30px;
     --titulos_encabezados_color: white;
     --cuerpo_de_texto_font: "Noto Sans", sans-serif;
     --cuerpo_de_texto_color: #B3B3B3;
-    --cuerpo_de_texto_size: 25px;
+    --cuerpo_de_texto_size: 18px;
     --button_radius: 5px;
     --naranja1: #F2911B;
     --naranjacards: rgb(180, 95, 38);
+    --naranjahover:#ffa538;
     /* ============= Media queries ============ */
-    --titulos_encabezados_size_h1_mq1400:40px;
-    --titulos_encabezados_size_h2_mq1400:35px;
-    --titulos_encabezados_size_h3_mq1400:30px;
-    --cuerpo_de_texto_size_mq1400:20px;
     --titulos_encabezados_size_h1_mq850: 35px;
     --titulos_encabezados_size_h2_mq850: 30px;
     --titulos_encabezados_size_h3_mq850: 25px;
@@ -43,6 +40,7 @@ body {
     flex-direction: column;
     gap: 100px;
     background: #181c20;
+    overflow-x: hidden;
 }
 
 button a{
@@ -53,11 +51,6 @@ main{
     display: flex;
     flex-direction: column;
     gap: 80px;
-}
-
-.benefits, .vehicles {
-    width: 90%;
-    margin: 0 auto;
 }
 
 h1 {
@@ -88,24 +81,7 @@ p {
 @media (max-width:1400px) {
     body {
         gap: 50px;
-    }
-
-    h1 {
-        font-size: var(--titulos_encabezados_size_h1_mq1400);
-    }
-
-    h2 {
-        font-size: var(--titulos_encabezados_size_h2_mq1400);
-    }
-
-    h3{
-        font-size: var(--titulos_encabezados_size_h3_mq1400);
-    }
-
-    p {
-        font-size: var(--cuerpo_de_texto_size_mq1400);
-    }
-    
+    }    
 }
 
 

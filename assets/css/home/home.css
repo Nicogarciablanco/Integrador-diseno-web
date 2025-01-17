@@ -1,5 +1,6 @@
 @import url("/assets/css/global-styles/styles.css");
 @import url("/assets/css/global-styles/header.css");
+@import url("/assets/css/global-styles/mq-menu.css");
 @import url("/assets/css/home/hero.css");
 @import url("/assets/css/home/about-us.css");
 @import url("/assets/css/home/benefits.css");

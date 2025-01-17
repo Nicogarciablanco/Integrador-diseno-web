@@ -1,6 +1,8 @@
 @import url("/assets/css/global-styles/styles.css");
 @import url("/assets/css/global-styles/header.css");
+@import url("/assets/css/global-styles/mq-menu.css");
 @import url("/assets/css/login-register/footer-login-register.css");
+
 
 .login {
     display: flex;
@@ -24,6 +26,7 @@
     border-radius: 14px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
@@ -32,14 +35,53 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    font-size: 20px;
+    font-size: var(--cuerpo_de_texto_size);
+    width: 100%;
 }
 
 .login-text input{
+    color: black;
     border-radius: 14px;
     border: none;
     padding: 10px;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
 }
 
+.send-button {
+    font-family: var(--cuerpo_de_texto_font);
+    background: var(--naranja1);
+    color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 14px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.send-button:hover {
+    background: var(--naranjahover);
+    font-size: 16px;
+}
+
+
+@media (max-width:1400px) {
+    .form-login {
+        width: 400px;
+    }
+
+    .login-text{
+        font-size: var(--cuerpo_de_texto_size_mq1400);
+    }
+
+    
+    
+}
+
+@media (max-width: 500px) {
+    .form-login{
+        width: 98%;
+    }
+}
