@@ -1,7 +1,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    z-index: 3;
+    z-index: 1000;
     position: sticky;
     background: #242a30;
     top: 0;
@@ -32,11 +32,11 @@ nav{
     align-items: center;
 }
 
-.menu-label,.menu-label-1400{ 
+.menu-label,.menu-label-1100{ 
     display: none;
 }
 
-#toggle-menu, #toggle-menu-1400{
+#toggle-menu, #toggle-menu-1100{
     display: none;
 }
 
