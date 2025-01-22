@@ -6,46 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
     <link rel="stylesheet" href="/assets/css/login-register/login.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/logo-icon">
 </head>
 
 <body>
+    <!-- //////////////////////////////////////////////////////////////////////////////// -->
+    <!-- //////////////////////////////////  HEADER  //////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <header id="home">
         <img class="logo" src="/assets/img/Logo-1.png" alt="">
         <nav>
+
+            <!-- CHECKBOX MENU -->
             <label for="toggle-menu" class="menu-label menu-bars">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
+            <!-- MENU -->
             <input type="checkbox" id="toggle-menu" />
+            <!-- OVERLAY -->
             <div class="overlay"></div>
+            <!-- NAVBAR -->
             <div class="navbar">
                 <button><a href="/register.html">Registrarse</a></button>
                 <button><a href="/index.html">Home</a></button>
             </div>
         </nav>
     </header>
-    <div class="overlay"></div>
+    <!-- //////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ///////////////////////////////////  MAIN  ///////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <main>
         <section class="login">
             <h1>Iniciar sesión</h1>
+            <!-- FORM -->
             <form action="" class="form-login">
+                <!-- EMAIL -->
                 <div class="login-text">
                     <label for="email">Email:</label>
                     <input type="email" placeholder="josedomingo@gmail.com" required>
                 </div>
+                <!-- PASSWORD -->
                 <div class="login-text">
                     <label for="password">Contraseña:</label>
                     <input type="password" placeholder="1234567890" required>
                 </div>
+
                 <input class="send-button" type="submit" value="Iniciar sesión">
             </form>
         </section>
     </main>
-
+    <!-- //////////////////////////////////////////////////////////////////////////////// -->
+    <!-- //////////////////////////////////  FOOTER  //////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <footer>
         <section>
                 <p>© 2024 Voltura. Todos los derechos reservados.</p>
+                <!-- LINKS -->
                 <div class="footer-links">
                     <a href="#">Politicas de privacidad</a>
                     <a href="#">Terminos y condiciones</a>
