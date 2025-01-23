@@ -124,6 +124,10 @@ footer{
     gap: 20px;
 }
 
+.policy-text{
+    font-size: var(--cuerpo_de_texto_size);
+}
+
 @media (max-width:1400px) {
     footer{
         gap: 40px;
@@ -140,6 +144,9 @@ footer{
         min-width: 300px;
     }
 
+    .copyright-footer p, .policy-text{
+        font-size: 18px;
+    }
     
 }
 

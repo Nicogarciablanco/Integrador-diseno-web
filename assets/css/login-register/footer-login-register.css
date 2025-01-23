@@ -34,11 +34,10 @@ p{
 @media (max-width:1400px) {
     footer section{
         width: 98%;
-        font-size: var(--cuerpo_de_texto_size_mq1400);
     }
 
-    footer a{
-        font-size: var(--cuerpo_de_texto_size_mq1400);
+    .footer-links a, .footer p{
+        font-size: 18px;
     }
 }
 
@@ -46,10 +45,10 @@ p{
     footer section{
         flex-direction: column;
         gap: 15px;
-        font-size: var(--cuerpo_de_texto_size_mq850);
     }
 
-    footer a{
+
+    .footer-links a, .footer p{
         font-size: var(--cuerpo_de_texto_size_mq850);
     }
 }
